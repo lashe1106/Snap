@@ -167,8 +167,6 @@ function operateIconMenu() {
 };
 
 function operateAtMobile() {
-    desktopImg.display.style = 'none'
-    mobileImg.display.style = 'block'
     body.style.background = 'linear-gradient(rgba(58, 58, 58, 0.65), rgba(58, 58, 58, 0.65))'
 
     divMenu.style.display = 'flex'
