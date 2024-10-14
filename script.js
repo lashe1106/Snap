@@ -19,6 +19,7 @@ const otherBtn = document.querySelector('#btn');
 const divMenu = document.querySelector('.iconMenu');
 const iconMenu = document.querySelector('.iconMenu img');
 const mobileImg = document.querySelector('.imgM');
+const desktopImg = document.querySelector('.imgD')
 const menuContent = document.querySelector('#menu-content');
 const iconCloseMenu = document.createElement('img');
 const initialDivMenu = divMenu.style.cssText;
@@ -132,7 +133,6 @@ function operateIconMenu() {
     iconCloseMenu.src = './images/icon-close-menu.svg';
     iconMenu.parentNode.replaceChild(iconCloseMenu, iconMenu);
     iconCloseMenu.style.float = 'right'
-    iconCloseMenu.style.border = '1px solid black'
 
     body.style.zIndex = '2'
     
@@ -167,6 +167,8 @@ function operateIconMenu() {
 };
 
 function operateAtMobile() {
+    desktopImg.display.style = 'none'
+    mobileImg.display.style = 'block'
     body.style.background = 'linear-gradient(rgba(58, 58, 58, 0.65), rgba(58, 58, 58, 0.65))'
 
     divMenu.style.display = 'flex'

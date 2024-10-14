@@ -309,10 +309,10 @@ body{
         margin: 0px;
         margin-right: 5px;
        .imgD{
-           display: none;
+           display: none !important;
         }
         .imgM{
-            display: block;
+            display: block !important; 
             height: 250px;
             width: 100%;
         }
