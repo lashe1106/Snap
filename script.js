@@ -19,7 +19,6 @@ const otherBtn = document.querySelector('#btn');
 const divMenu = document.querySelector('.iconMenu');
 const iconMenu = document.querySelector('.iconMenu img');
 const mobileImg = document.querySelector('.imgM');
-const desktopImg = document.querySelector('.imgD')
 const menuContent = document.querySelector('#menu-content');
 const iconCloseMenu = document.createElement('img');
 const initialDivMenu = divMenu.style.cssText;
