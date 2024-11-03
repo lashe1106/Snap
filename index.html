@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="/images/favicon-32x32.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./images/favicon-32x32.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <title>Snap</title>
+    <script src="./script.js" defer></script>
 </head>
 <body>
     <div class="container">
@@ -14,39 +15,61 @@
                 <div>
                     <img class="img" src="./images/logo.svg" alt="">
                 </div>
-                <div class="navagation">
-                    <nav>Features</nav>
-                    <img class="nav-link" src="images/icon-arrow-down.svg">
-                    <nav>Company</nav>
-                    <img class="nav-link" src="images/icon-arrow-down.svg">
-                    <nav>Career</nav>
-                    <nav>About</nav>
+                <div class="navigation">
+                    <div class="nav-main">
+                        <div class="features-main">
+                            <div class="nav" id="nav-features">
+                                <nav>Features</nav>
+                                <img class="nav-link" src="images/icon-arrow-down.svg">
+                            </div>
+                            <div id="features-content"></div>
+                        </div>
+                        
+                        <div class="company-main">
+                            <div class="nav" id="nav-company">
+                                <nav>Company</nav>
+                                <img class="nav-link" src="images/icon-arrow-down.svg">
+                            </div>
+                            <div id="company-content"></div>
+                        </div>
+                       
+                    </div>
+                    
+                    <nav class="nav">Careers</nav>
+                    <nav class="nav">About</nav>
                 </div>
             </main>
             <main class="loginBtn">
-                <nav>Login</nav>
-                <button>Register</button>
+                <button id="login">Login</button>
+                <button id="register">Register</button>
             </main>
             <main class="iconMenu">
-                <img src="./images/icon-menu.svg" alt="">
+                <div id="iconImage">
+                    <img src="./images/icon-menu.svg" alt="">
+                </div>
+                <div id="menu-content"></div>
             </main>
         </section>
+
         <section class="hero">
-            <main class="textBox">
-                <h1>Make <br> remote work</h1>
-                <p>Get your team in sync, no matter your location. Streamline processes, create team rituals, and watch productivity soar.</p>
-                <button>Learn More</button>
-            </main>
+            <div>
+                <main class="textBox">
+                    <h1>Make <br>remote work</h1>
+                    <p>Get your team in sync, no matter your location. Streamline processes, create team rituals, and watch productivity soar.</p>
+                    <button id="btn">Learn more</button>
+                </main>
+                <main class="client">
+                    <img src="images/client-databiz.svg" alt="">
+                    <img id="client-icon" src="images/client-audiophile.svg" alt="">
+                    <img id="client-meet" src="images/client-meet.svg" alt="">
+                    <img id="client-icon" src="images/client-maker.svg" alt="">
+                </main> 
+            </div>
+        
             <main class="imgBox">
-                <img class="imgD" width="100" src="./images/image-hero-desktop.png" alt="">
-                <img class="imgM" src="images/image-hero-mobile.png" alt=""> 
+                <img class="imgD" src="./images/image-hero-desktop.png" alt="">
+                <img class="imgM" src="./images/image-hero-mobile.png" alt=""> 
             </main>
-            <main class="client">
-                <img src="images/client-databiz.svg" alt="">
-                <img style="height: 25px;" src="images/client-audiophile.svg" alt="">
-                <img style="height: 15px;" src="images/client-meet.svg" alt="">
-                <img src="images/client-maker.svg" alt="">
-            </main> 
         </section>
     </div>
 </body>
