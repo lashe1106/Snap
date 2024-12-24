@@ -19,6 +19,7 @@ const otherBtn = document.querySelector('#btn');
 const divMenu = document.querySelector('.iconMenu');
 const iconMenu = document.querySelector('.iconMenu img');
 const mobileImg = document.querySelector('.imgM');
+const desktopImg = document.querySelector(".imgD");
 const menuContent = document.querySelector('#menu-content');
 const iconCloseMenu = document.createElement('img');
 const initialDivMenu = divMenu.style.cssText;
@@ -29,6 +30,7 @@ const initialMobileImg = mobileImg.style.cssText;
 const initialOtherBtn = otherBtn.style.cssText;
 const initialFeaturesDiv = featuresDiv.style.cssText;
 const initialCompanyDiv = companyDiv.style.cssText;
+const atMobile = window.innerWidth <= 500
 
 body.addEventListener('click', operateBody);
 
@@ -255,6 +257,18 @@ function watchScreenSize() {
 window.addEventListener('resize', watchScreenSize);
 
 watchScreenSize();
+
+function watchMobileSize() {
+    if (atMobile) {
+        mobileImg.style.display = "block"
+        desktopImg.style.display="none"
+    } else {
+        mobileImg.style.display = "none"
+        desktopImg.style.display="block"
+    }
+}
+
+watchMobileSize();
 
 
 

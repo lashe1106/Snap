@@ -308,15 +308,25 @@ body{
         width: 100%;
         margin: 0px;
         margin-right: 5px;
-       .imgD{
+       /* .imgD{
            display: none !important;
         }
         .imgM{
             display: block !important; 
             height: 250px;
             width: 100%;
-        }
+        } */
     
+    }
+
+    .imgBox .imgD {
+        display: none !important;
+    }
+
+    .imgBox .imgM {
+        display: block !important; 
+        height: 250px;
+        width: 100%;
     }
 
     .client{
